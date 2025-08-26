@@ -156,16 +156,36 @@ input, textarea, button {
   border-radius: 15px;
   border: 1px solid #ccc;
 }
+
+/* ...existing code... */
 .btn-solicitar {
   background: var(--white);
   color: var(--blue-dark);
   font-family: Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
-  border: 2px solid #ffffff; /* grosor, estilo y color */
-  }
-button:hover {
+  border: 2px solid #02fa7e;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-solicitar:hover {
   background: #0B192E;
   color: var(--white);
 }
+/* ...existing code... */
 
+/* Esto hará que las columnas se vean una debajo de la otra en celulares y tablets */
+@media (max-width: 768px) {
+  .servicios-columnas {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .columna {
+    margin-bottom: 20px;
+  }
+}
+/* Esto hará que las columnas se vean una debajo de la otra en celulares y tablets*/
