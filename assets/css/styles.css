@@ -189,3 +189,45 @@ input, textarea, button {
   }
 }
 /* Esto hará que las columnas se vean una debajo de la otra en celulares y tablets*/
+
+/* Estilos para la galería de imágenes */
+/* ...existing code... */
+.galeria-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slider-images img {
+  width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0A192F;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+/* ...existing code... */
+
+/* Fin estilos para la galería de imágenes */
