@@ -159,7 +159,7 @@ input, textarea, button {
 
 /* ...existing code... */
 .btn-solicitar {
-  background: var(--white);
+  background: #02fa7e;
   color: var(--blue-dark);
   font-family: Arial, sans-serif;
   font-weight: bold;
